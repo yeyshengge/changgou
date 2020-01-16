@@ -1,0 +1,4 @@
+com\cahnggou\file\FileApplication.class
+com\cahnggou\file\utils\FastDFSClient.class
+com\cahnggou\file\utils\FastDFSFile.class
+com\cahnggou\file\controller\FileController.class

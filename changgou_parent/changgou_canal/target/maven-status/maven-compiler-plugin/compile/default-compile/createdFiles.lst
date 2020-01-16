@@ -1,0 +1,4 @@
+com\itheima\canal\config\RabbitmqConfig.class
+com\itheima\canal\listener\BusinessListener.class
+com\itheima\canal\CanalApplication.class
+com\itheima\canal\listener\SpuListener.class

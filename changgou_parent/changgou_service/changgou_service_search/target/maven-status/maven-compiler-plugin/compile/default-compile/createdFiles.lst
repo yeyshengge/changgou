@@ -1,0 +1,5 @@
+com\changgou\search\service\ESManageService.class
+com\changgou\search\dao\ESManageMapper.class
+com\changgou\search\SearchApplication.class
+com\changgou\search\service\impl\ESManageServiceImpl.class
+com\changgou\search\controller\ESManageController.class
