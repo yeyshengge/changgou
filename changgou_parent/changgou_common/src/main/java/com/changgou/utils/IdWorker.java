@@ -163,7 +163,7 @@ public class IdWorker {
     public static void main(String[] args) {
 
         IdWorker idWorker=new IdWorker(0,0);
-
+	 System.out.println("憨批胡冰峰");
         for(int i=0;i<10000;i++){
             long nextId = idWorker.nextId();
             System.out.println(nextId);
