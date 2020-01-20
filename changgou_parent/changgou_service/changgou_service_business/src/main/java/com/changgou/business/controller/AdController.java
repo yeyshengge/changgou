@@ -1,4 +1,5 @@
 package com.changgou.business.controller;
+import com.changgou.business.pojo.Position;
 import com.changgou.entity.PageResult;
 import com.changgou.entity.Result;
 import com.changgou.entity.StatusCode;
@@ -45,12 +46,11 @@ public class AdController {
      * @param ad
      * @return
      */
-    @PostMapping
+    @PostMapping("/add")
     public Result add(@RequestBody Ad ad){
         adService.add(ad);
         return new Result(true,StatusCode.OK,"添加成功");
     }
-
 
     /***
      * 修改数据
@@ -101,6 +101,12 @@ public class AdController {
         Page<Ad> pageList = adService.findPage(searchMap, page, size);
         PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getResult());
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
+    }
+
+    @GetMapping("/showPosition")
+    public Result showPosition(){
+        List<Position> list = adService.showPosition();
+        return new Result(true,StatusCode.OK,"查询成功",list);
     }
 
 

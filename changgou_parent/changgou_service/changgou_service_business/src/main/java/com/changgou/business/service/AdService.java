@@ -1,6 +1,7 @@
 package com.changgou.business.service;
 
 import com.changgou.business.pojo.Ad;
+import com.changgou.business.pojo.Position;
 import com.github.pagehelper.Page;
 
 import java.util.List;
@@ -64,6 +65,6 @@ public interface AdService {
     Page<Ad> findPage(Map<String, Object> searchMap, int page, int size);
 
 
-
+    List<Position> showPosition();
 
 }

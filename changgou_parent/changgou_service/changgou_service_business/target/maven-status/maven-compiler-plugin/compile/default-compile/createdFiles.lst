@@ -1,3 +1,4 @@
+com\changgou\business\dao\PositionMapper.class
 com\changgou\business\controller\BaseExceptionHandler.class
 com\changgou\business\dao\ActivityMapper.class
 com\changgou\BusinessApplication.class

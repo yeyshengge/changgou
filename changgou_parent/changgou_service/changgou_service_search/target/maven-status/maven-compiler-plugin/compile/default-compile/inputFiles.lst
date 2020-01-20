@@ -1,5 +1,11 @@
-D:\ideaspacework\changgou\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\service\ESManageService.java
-D:\ideaspacework\changgou\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\service\impl\ESManageServiceImpl.java
-D:\ideaspacework\changgou\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\dao\ESManageMapper.java
-D:\ideaspacework\changgou\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\SearchApplication.java
-D:\ideaspacework\changgou\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\controller\ESManageController.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\service\ESManageService.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\service\impl\SearchServiceImpl.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\dao\ESManageMapper.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\listener\GoodsUpListener.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\service\impl\ESManageServiceImpl.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\service\SearchService.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\controller\ESManageController.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\listener\GoodsDelListener.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\SearchApplication.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\config\RabbitmqConfig.java
+D:\ideaspacework\gitwork\changgou_parent\changgou_service\changgou_service_search\src\main\java\com\changgou\search\controller\SearchController.java
