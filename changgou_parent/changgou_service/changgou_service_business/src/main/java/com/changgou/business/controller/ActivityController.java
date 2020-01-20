@@ -103,5 +103,18 @@ public class ActivityController {
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
 
-
+    /**
+     * 根据id对活动进行逻辑删除
+     * @param id
+     * @return
+     */
+    @DeleteMapping("/deleteAd/{id}")
+    public Result deleteAd(@PathVariable Integer id){
+        boolean flag = activityService.deleteAd(id);
+        if (flag){
+            return new Result(flag,StatusCode.OK,"删除活动成功");
+        }else{
+            return new Result(flag,StatusCode.OK,"删除活动失败");
+        }
+    }
 }

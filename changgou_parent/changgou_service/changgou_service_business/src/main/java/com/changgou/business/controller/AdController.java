@@ -6,6 +6,7 @@ import com.changgou.entity.StatusCode;
 import com.changgou.business.service.AdService;
 import com.changgou.business.pojo.Ad;
 import com.github.pagehelper.Page;
+import org.apache.ibatis.annotations.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -108,6 +109,5 @@ public class AdController {
         List<Position> list = adService.showPosition();
         return new Result(true,StatusCode.OK,"查询成功",list);
     }
-
 
 }

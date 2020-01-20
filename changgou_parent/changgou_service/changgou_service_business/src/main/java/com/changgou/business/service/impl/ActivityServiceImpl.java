@@ -7,6 +7,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -102,6 +103,27 @@ public class ActivityServiceImpl implements ActivityService {
         PageHelper.startPage(page,size);
         Example example = createExample(searchMap);
         return (Page<Activity>)activityMapper.selectByExample(example);
+    }
+
+    /**
+     * 根据id对活动进行逻辑删除
+     * @param id
+     * @return
+     */
+    @Transactional
+    @Override
+    public boolean deleteAd(Integer id) {
+        Activity activity = new Activity();
+        activity.setId(id);
+        activity.setIsDelete("1");
+        activityMapper.updateByPrimaryKeySelective(activity);
+        Activity activity222 = activityMapper.selectByPrimaryKey(id);
+        if ("0".equals(activity222.getIsDelete())){
+            return false;
+        }else{
+            return true;
+        }
+
     }
 
     /**
