@@ -64,6 +64,11 @@ public interface ActivityService {
     Page<Activity> findPage(Map<String, Object> searchMap, int page, int size);
 
 
-
+    /**
+     * 根据id对活动进行逻辑删除
+     * @param id
+     * @return
+     */
+    boolean deleteAd(Integer id);
 
 }

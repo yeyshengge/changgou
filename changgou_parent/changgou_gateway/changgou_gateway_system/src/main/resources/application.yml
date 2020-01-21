@@ -34,6 +34,12 @@ spring:
             - Path=/system/**
           filters:
             - StripPrefix= 1
+        - id: business
+          uri: lb://business
+          predicates:
+            - Path=/business/**
+          filters:
+            - StripPrefix= 1
   redis:
     host: 192.168.200.128
     port: 6379

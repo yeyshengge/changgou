@@ -1,5 +1,8 @@
 package com.changgou.business.pojo;
 
+import lombok.Data;
+
+import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
@@ -9,6 +12,7 @@ import java.io.Serializable;
  * @author 黑马架构师2.5
  *
  */
+@Data
 @Table(name="tb_activity")
 public class Activity implements Serializable {
 
@@ -21,6 +25,10 @@ public class Activity implements Serializable {
 	private java.util.Date startTime;//开始时间
 	private java.util.Date endTime;//结束时间
 	private String status;//状态
+	@Column(name = "isMarketable")
+	private String isMarketable;//是否上架,1代表已上架,0代表未上架
+	@Column(name = "isDelete")
+	private String isDelete;//是否删除,1代表已删除,0代表未删除
 	private String content;//活动内容
 
 	
