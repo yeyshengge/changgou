@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b5f54fd-6f44-4ca1-936b-c1358926b8ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/changgou_canal/target/changgou_canal-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_canal/target/changgou_canal-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_common_db/target/changgou_common_db-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_common_db/target/changgou_common_db-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_eureka/target/changgou_eureka-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_eureka/target/changgou_eureka-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_business/target/changgou_service_business-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_business/target/changgou_service_business-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_config/target/changgou_service_config-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_config/target/changgou_service_config-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_file/target/changgou_service_file-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_file/target/changgou_service_file-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/dao/BrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/dao/BrandMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/target/changgou_service_goods-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/target/changgou_service_goods-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/target/classes/com/changgou/goods/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/target/classes/com/changgou/goods/controller/BrandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/target/classes/com/changgou/goods/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/target/classes/com/changgou/goods/service/BrandService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_goods/target/classes/com/changgou/goods/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_goods/target/classes/com/changgou/goods/service/impl/BrandServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_order/target/changgou_service_order-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_order/target/changgou_service_order-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_search/target/changgou_service_search-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_search/target/changgou_service_search-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_system/target/changgou_service_system-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_system/target/changgou_service_system-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service/changgou_service_user/target/changgou_service_user-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service/changgou_service_user/target/changgou_service_user-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_business_api/target/changgou_service_business_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_business_api/target/changgou_service_business_api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_config_api/target/changgou_service_config_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_config_api/target/changgou_service_config_api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_goods_api/src/main/java/com/changgou/goods/pojo/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_goods_api/src/main/java/com/changgou/goods/pojo/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_goods_api/target/changgou_service_goods_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_goods_api/target/changgou_service_goods_api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_goods_api/target/classes/com/changgou/goods/pojo/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_goods_api/target/classes/com/changgou/goods/pojo/Brand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_order_api/target/changgou_service_order_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_order_api/target/changgou_service_order_api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_search_api/target/changgou_service_search_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_search_api/target/changgou_service_search_api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_system_api/target/changgou_service_system_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_system_api/target/changgou_service_system_api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_service_api/changgou_service_user_api/target/changgou_service_user_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_service_api/changgou_service_user_api/target/changgou_service_user_api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_web/target/changgou_web-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_web/target/changgou_web-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\repository" />
+        <option name="mavenHome" value="D:/utils/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\utils\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WbMQLYehK3aZjwU3wNlIIHZPfH" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GoodsApplication">
+    <configuration name="BusinessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="changgou_service_business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.changgou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.BusinessApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="changgou_eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.changgou.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="changgou_service_goods" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.changgou.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.GoodsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GoodsApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="Spring Boot.BusinessApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b5f54fd-6f44-4ca1-936b-c1358926b8ca" name="Default Changelist" comment="" />
+      <created>1579413824491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579413824491</updated>
+      <workItem from="1579413829478" duration="422000" />
+      <workItem from="1579491430302" duration="11956000" />
+      <workItem from="1579514070790" duration="1003000" />
+      <workItem from="1579570472409" duration="4738000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
