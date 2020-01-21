@@ -9,8 +9,10 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -122,6 +124,35 @@ public class AdServiceImpl implements AdService {
     public List<Position> showPosition() {
         List<Position> positions = positionMapper.selectAll();
         return positions;
+    }
+
+    /**
+     * 轮播图广告置顶
+     * @param id
+     * @return
+     */
+    @Transactional
+    @Override
+    public void goUp(Integer id) {
+        Ad ad = adMapper.selectByPrimaryKey(id);
+        if (ad==null){
+            throw new NullPointerException();
+        }
+        ad.setSequence(1);
+        adMapper.updateByPrimaryKeySelective(ad);
+
+        List<Ad> batchAdList = new ArrayList<>();
+        List<Ad> ads = adMapper.selectAll();
+        for (Ad adc : ads) {
+            if (adc.getId()==id){
+                continue;
+            }
+            adc.setSequence(adc.getSequence()+1);
+            batchAdList.add(adc);
+        }
+
+        //将sequence加一之后的全部Ad进行批量修改
+        adMapper.batchUpDate(batchAdList);
     }
 
     /**

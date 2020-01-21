@@ -1,6 +1,7 @@
 package com.changgou.business.pojo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Id;
@@ -12,6 +13,7 @@ import java.io.Serializable;
  *
  * @author 黑马架构师2.5
  */
+@Data
 @Table(name = "tb_ad")
 public class Ad implements Serializable {
 
@@ -31,6 +33,7 @@ public class Ad implements Serializable {
     private String image;//图片地址
     private String url;//URL
     private String remarks;//备注
+    private Integer sequence;//顺序,越小越靠前
 
 
     public Integer getId() {

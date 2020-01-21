@@ -67,4 +67,10 @@ public interface AdService {
 
     List<Position> showPosition();
 
+
+    /**
+     * 轮播图广告置顶
+     * @param id
+     */
+    void goUp(Integer id);
 }

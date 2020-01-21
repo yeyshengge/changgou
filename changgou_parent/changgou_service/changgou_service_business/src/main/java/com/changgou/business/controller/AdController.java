@@ -110,4 +110,14 @@ public class AdController {
         return new Result(true,StatusCode.OK,"查询成功",list);
     }
 
+    /**
+     * 轮播图广告置顶
+     * @param id
+     * @return
+     */
+    @GetMapping("/goUp/{id}")
+    public Result goUp(@PathVariable Integer id){
+        adService.goUp(id);
+        return new Result(true,StatusCode.OK,"置顶成功");
+    }
 }
