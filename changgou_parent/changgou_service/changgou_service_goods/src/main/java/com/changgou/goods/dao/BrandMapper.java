@@ -14,4 +14,5 @@ public interface BrandMapper extends Mapper<Brand> {
     @Select("select name,image from tb_brand where id in (select brand_id from tb_category_brand where category_id in (SELECT id FROM tb_category where name = #{categoryName}))")
     public List<Map> findBrandByCategory(@Param("categoryName") String categoryName);
 
+
 }

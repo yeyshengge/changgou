@@ -71,6 +71,13 @@ public interface BrandService {
      */
     public List<Map> findBrandByCategory(String categoryName);
 
-
+    /***
+     * 根据名称查询
+     * @param searchName
+     * @param currentPage
+     * @param pageSize
+     * @return
+     */
+    Page<Brand> findPage1(String searchName, int currentPage, int pageSize);
 
 }

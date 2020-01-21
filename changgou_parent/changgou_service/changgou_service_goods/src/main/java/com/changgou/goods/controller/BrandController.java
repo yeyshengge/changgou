@@ -111,6 +111,13 @@ public class BrandController {
         return new Result(true, StatusCode.OK, "查询成功", pageResult);
     }
 
+    @GetMapping(value = "/{currentPage}/{pageSize}/{searchName}")
+    public Result findPage1(@PathVariable int currentPage, @PathVariable int pageSize, @PathVariable String searchName) {
+        Page<Brand> pageList = brandService.findPage1(searchName, currentPage, pageSize);
+        PageResult pageResult = new PageResult(pageList.getTotal(), pageList.getResult());
+        return new Result(true, StatusCode.OK, "查询成功", pageResult);
+    }
+
 
     /**
      * 根据分类名称查询品牌列表

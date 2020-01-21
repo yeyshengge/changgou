@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -121,6 +122,15 @@ public class BrandServiceImpl implements BrandService {
     @Override
     public List<Map> findBrandByCategory(String categoryName) {
         return brandMapper.findBrandByCategory(categoryName);
+    }
+
+    @Override
+    public Page<Brand> findPage1(String searchName, int currentPage, int pageSize) {
+        PageHelper.startPage(currentPage, pageSize);
+        Example example = new Example(Brand.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andLike("name",searchName);
+        return (Page<Brand>) brandMapper.selectByExample(example);
     }
 
     /**
