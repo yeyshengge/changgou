@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.changgou.goods.daoetc.ParaDao">
+
+    <select id="findPage" resultType="java.util.Map">
+        SELECT s.id para_id,s.`name`  para_name,t.`name` template_name,s.`options` para_options,s.seq para_seq FROM tb_para s , tb_template t WHERE s.template_id = t.id AND t.id =#{templateId}
+    </select>
+</mapper>

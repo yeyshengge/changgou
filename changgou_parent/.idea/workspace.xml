@@ -36,48 +36,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpecController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/SpecController.java">
+      <file leaf-file-name="ParaController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/ParaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+            <state relative-caret-position="593">
+              <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/SpecService.java">
+      <file leaf-file-name="ParaService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/ParaService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
+            <state relative-caret-position="570">
+              <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/SpecServiceImpl.java">
+      <file leaf-file-name="ParaServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/ParaServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1495">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="644">
+              <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/daoetc/SpecDao.java">
+      <file leaf-file-name="ParaDao.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/com/changgou/goods/daoetc/ParaDao.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <caret line="5" column="191" selection-start-line="5" selection-start-column="191" selection-end-line="5" selection-end-column="191" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpecDao.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/com/changgou/goods/daoetc/SpecDao.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="ParaDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/daoetc/ParaDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -99,6 +113,11 @@
         <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/SpecService.java" />
         <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/pom.xml" />
         <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/SpecServiceImpl.java" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/ParaController.java" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/daoetc/ParaDao.java" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/ParaServiceImpl.java" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/ParaService.java" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/com/changgou/goods/daoetc/ParaDao.xml" />
       </list>
     </option>
   </component>
@@ -111,9 +130,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\develop\maven_repo" />
-        <option name="mavenHome" value="D:/develop/maven/apache-maven-3.5.2" />
-        <option name="userSettingsFile" value="D:\develop\maven\apache-maven-3.5.2\conf\settings.xml" />
+        <option name="localRepository" value="E:\Maven\repository" />
+        <option name="mavenHome" value="E:/Maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="E:\Maven\apache-maven-3.6.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -232,6 +251,31 @@
               <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -309,6 +353,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.261633" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\itheimaProject\changgougit\changgou\changgou_parent\changgou_service\changgou_service_goods\src\main\resources\com\changgou\goods\daoetc" />
+      <recent name="E:\itheimaProject\changgougit\changgou\changgou_parent\changgou_service\changgou_service_goods\src\main\java\com\changgou\goods" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -443,12 +493,12 @@
       <workItem from="1579515580525" duration="1690000" />
       <workItem from="1579572936758" duration="5886000" />
       <workItem from="1579578942189" duration="712000" />
-      <workItem from="1579704753797" duration="1557000" />
+      <workItem from="1579704753797" duration="2638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14676000" />
+    <option name="totallyTimeSpent" value="15757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,41 +561,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/controller/AdController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/dao/AdMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changgou_service_api/changgou_service_business_api/src/main/java/com/changgou/business/pojo/Ad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/service/impl/AdServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2898">
-          <caret line="146" column="33" lean-forward="true" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/controller/AdController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2268">
@@ -850,7 +865,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/com/changgou/goods/daoetc/SpecDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="1" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/ParaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/ParaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/ParaServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/daoetc/ParaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/com/changgou/goods/daoetc/ParaDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="191" selection-start-line="5" selection-start-column="191" selection-end-line="5" selection-end-column="191" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

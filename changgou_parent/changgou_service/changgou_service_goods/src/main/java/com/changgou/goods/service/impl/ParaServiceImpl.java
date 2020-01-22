@@ -1,6 +1,7 @@
 package com.changgou.goods.service.impl;
 
 import com.changgou.goods.dao.ParaMapper;
+import com.changgou.goods.daoetc.ParaDao;
 import com.changgou.goods.service.ParaService;
 import com.changgou.goods.pojo.Para;
 import com.github.pagehelper.Page;
@@ -14,6 +15,9 @@ import java.util.Map;
 
 @Service
 public class ParaServiceImpl implements ParaService {
+
+    @Autowired
+    private ParaDao paraDao;
 
     @Autowired
     private ParaMapper paraMapper;
@@ -98,10 +102,9 @@ public class ParaServiceImpl implements ParaService {
      * @return 分页结果
      */
     @Override
-    public Page<Para> findPage(Map<String,Object> searchMap, int page, int size){
+    public Page<Map> findPage(Map<String,Object> searchMap,int templateId ,int page, int size){
         PageHelper.startPage(page,size);
-        Example example = createExample(searchMap);
-        return (Page<Para>)paraMapper.selectByExample(example);
+        return paraDao.findPage(templateId);
     }
 
     /**

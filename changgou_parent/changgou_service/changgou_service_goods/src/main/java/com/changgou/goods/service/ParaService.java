@@ -61,7 +61,7 @@ public interface ParaService {
      * @param size
      * @return
      */
-    Page<Para> findPage(Map<String, Object> searchMap, int page, int size);
+    Page<Map> findPage(Map<String, Object> searchMap,int templateId, int page, int size);
 
 
 

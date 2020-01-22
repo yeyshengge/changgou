@@ -96,9 +96,9 @@ public class ParaController {
      * @param size
      * @return
      */
-    @GetMapping(value = "/search/{page}/{size}" )
-    public Result findPage(@RequestParam Map searchMap, @PathVariable  int page, @PathVariable  int size){
-        Page<Para> pageList = paraService.findPage(searchMap, page, size);
+    @GetMapping(value = "/search/{templateId}/{page}/{size}" )
+    public Result findPage(@RequestParam Map searchMap,@PathVariable("templateId") int templateId , @PathVariable  int page, @PathVariable  int size){
+        Page<Para> pageList = paraService.findPage(searchMap,templateId, page, size);
         PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getResult());
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
