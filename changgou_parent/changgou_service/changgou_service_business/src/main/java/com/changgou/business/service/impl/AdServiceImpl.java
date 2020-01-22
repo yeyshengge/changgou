@@ -12,9 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class AdServiceImpl implements AdService {
@@ -109,15 +107,49 @@ public class AdServiceImpl implements AdService {
      * 条件+分页查询
      *
      * @param searchMap 查询条件
-     * @param page      页码
-     * @param size      页大小
+     * @param currentPage      页码
+     * @param pageSize      页大小
      * @return 分页结果
      */
     @Override
-    public Page<Ad> findPage(Map<String, Object> searchMap, int page, int size) {
-        PageHelper.startPage(page, size);
-        Example example = createExample(searchMap);
-        return (Page<Ad>) adMapper.selectByExample(example);
+    public Page<Ad> findPage(Map searchMap, int currentPage, int pageSize) {
+        PageHelper.startPage(currentPage,pageSize);
+
+        Example example = new Example(Ad.class);
+        Example.Criteria criteria = example.createCriteria();
+        if (searchMap!=null){
+            String name = (String) searchMap.get("name");
+            if (name !=null && !"".equals(name)){
+                criteria.andLike("name",name);
+            }
+            String position = (String) searchMap.get("position");
+            if (position!=null && !"".equals(position)){
+                criteria.andEqualTo("position",position);
+            }
+            String endTime = (String) searchMap.get("endTime");
+            if (endTime!=null && !"".equals(endTime)){
+                if (endTime.equals("1天内")){
+                    Calendar calendar = Calendar.getInstance();
+                    calendar.set(Calendar.DATE,calendar.get(Calendar.DATE)+1);
+                    Date date = calendar.getTime();
+                    criteria.andBetween("endTime",new Date(),date);
+                }
+                if (endTime.equals("3天内")){
+                    Calendar calendar = Calendar.getInstance();
+                    calendar.set(Calendar.DATE,calendar.get(Calendar.DATE)+3);
+                    Date date = calendar.getTime();
+                    criteria.andBetween("endTime",new Date(),date);
+                }
+                if (endTime.equals("1周内")){
+                    Calendar calendar = Calendar.getInstance();
+                    calendar.set(Calendar.DATE,calendar.get(Calendar.DATE)+7);
+                    Date date = calendar.getTime();
+                    criteria.andBetween("endTime",new Date(),date);
+                }
+            }
+        }
+        Page<Ad> list = (Page<Ad>) adMapper.selectByExample(example);
+        return list;
     }
 
     @Override

@@ -62,7 +62,7 @@ public interface AdService {
      * @param size
      * @return
      */
-    Page<Ad> findPage(Map<String, Object> searchMap, int page, int size);
+    Page<Ad> findPage(Map searchMap, int page, int size);
 
 
     List<Position> showPosition();

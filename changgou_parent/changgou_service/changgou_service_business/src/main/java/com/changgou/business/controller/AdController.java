@@ -97,12 +97,12 @@ public class AdController {
      * @param size
      * @return
      */
-    @GetMapping(value = "/search/{page}/{size}" )
-    public Result findPage(@RequestParam Map searchMap, @PathVariable  int page, @PathVariable  int size){
-        Page<Ad> pageList = adService.findPage(searchMap, page, size);
-        PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getResult());
-        return new Result(true,StatusCode.OK,"查询成功",pageResult);
-    }
+//    @GetMapping(value = "/search/{page}/{size}" )
+//    public Result findPage(@RequestParam Map searchMap, @PathVariable  int page, @PathVariable  int size){
+//        Page<Ad> pageList = adService.findPage(searchMap, page, size);
+//        PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getResult());
+//        return new Result(true,StatusCode.OK,"查询成功",pageResult);
+//    }
 
     @GetMapping("/showPosition")
     public Result showPosition(){
@@ -119,5 +119,19 @@ public class AdController {
     public Result goUp(@PathVariable Integer id){
         adService.goUp(id);
         return new Result(true,StatusCode.OK,"置顶成功");
+    }
+
+    /**
+     * 广告条件分页查询
+     * @param searchMap
+     * @param currentPage
+     * @param pageSize
+     * @return
+     */
+    @PostMapping("/search/{currentPage}/{pageSize}")
+    public PageResult findPage(@RequestBody Map searchMap,@PathVariable("currentPage") int currentPage,@PathVariable("pageSize") int pageSize ){
+        Page<Ad> page = adService.findPage(searchMap, currentPage, pageSize);
+        return new PageResult(page.getTotal(),page.getPages(),page.getResult());
+
     }
 }
