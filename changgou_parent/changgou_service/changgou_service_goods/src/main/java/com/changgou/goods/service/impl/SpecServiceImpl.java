@@ -1,6 +1,7 @@
 package com.changgou.goods.service.impl;
 
 import com.changgou.goods.dao.SpecMapper;
+import com.changgou.goods.daoetc.SpecDao;
 import com.changgou.goods.service.SpecService;
 import com.changgou.goods.pojo.Spec;
 import com.github.pagehelper.Page;
@@ -17,6 +18,9 @@ public class SpecServiceImpl implements SpecService {
 
     @Autowired
     private SpecMapper specMapper;
+
+    @Autowired
+    private SpecDao specDao;
 
     /**
      * 查询全部列表
@@ -106,10 +110,9 @@ public class SpecServiceImpl implements SpecService {
      * @return 分页结果
      */
     @Override
-    public Page<Spec> findPage(Map<String, Object> searchMap, int page, int size) {
-        PageHelper.startPage(page, size);
-        Example example = createExample(searchMap);
-        return (Page<Spec>) specMapper.selectByExample(example);
+    public Page<Map> findPage(Map<String,Object> searchMap,int templateId, int page, int size){
+        PageHelper.startPage(page,size);
+        return specDao.findPage(templateId);
     }
 
     @Override

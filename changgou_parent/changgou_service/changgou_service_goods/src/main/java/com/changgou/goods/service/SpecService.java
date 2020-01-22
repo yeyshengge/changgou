@@ -61,7 +61,7 @@ public interface SpecService {
      * @param size
      * @return
      */
-    Page<Spec> findPage(Map<String, Object> searchMap, int page, int size);
+    Page<Map> findPage(Map<String, Object> searchMap,int templateId, int page, int size);
 
 
     /**

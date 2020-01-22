@@ -96,10 +96,10 @@ public class SpecController {
      * @param size
      * @return
      */
-    @GetMapping(value = "/search/{page}/{size}" )
-    public Result findPage(@RequestParam Map searchMap, @PathVariable  int page, @PathVariable  int size){
-        Page<Spec> pageList = specService.findPage(searchMap, page, size);
-        PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getResult());
+    @GetMapping(value = "/search/{templateId}/{page}/{size}" )
+    public Result findPage(@RequestParam Map searchMap,@PathVariable int templateId ,@PathVariable("page")  int page, @PathVariable("size")  int size){
+        Page<Spec> pageList = specService.findPage(searchMap,templateId, page, size);
+        PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getPages(),pageList.getResult());
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
 

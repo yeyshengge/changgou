@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.changgou.goods.daoetc.SpecDao">
+
+    <select id="findPage" resultType="java.util.Map">
+        SELECT s.id spec_id,s.`name` spec_name,t.`name` template_name,s.`options` spec_options,s.seq spec_seq FROM tb_spec s , tb_template t WHERE s.template_id = t.id and t.id=#{templateId}
+    </select>
+</mapper>

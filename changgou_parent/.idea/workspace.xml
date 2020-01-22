@@ -36,31 +36,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/controller/AdController.java">
+      <file leaf-file-name="SpecController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/SpecController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="106" column="32" lean-forward="true" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+            <state relative-caret-position="547">
+              <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/service/AdService.java">
+      <file leaf-file-name="SpecService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/SpecService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+            <state relative-caret-position="497">
+              <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/service/impl/AdServiceImpl.java">
+      <file leaf-file-name="SpecServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/SpecServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+            <state relative-caret-position="-1495">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpecDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/daoetc/SpecDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpecDao.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/com/changgou/goods/daoetc/SpecDao.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -81,6 +95,10 @@
         <option value="$PROJECT_DIR$/changgou_common/src/main/java/com/changgou/entity/PageResult.java" />
         <option value="$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/service/impl/AdServiceImpl.java" />
         <option value="$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/controller/AdController.java" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/SpecController.java" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/SpecService.java" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/SpecServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -100,6 +118,7 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
         <option name="lookForNested" value="true" />
       </MavenImportingSettings>
     </option>
@@ -108,7 +127,7 @@
     <packageJsonPaths />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="182" />
     <option name="y" value="44" />
     <option name="width" value="1232" />
@@ -135,82 +154,82 @@
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="changgou" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="changgou" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="changgou" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="daoetc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
-              <item name="changgou_service_business" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -218,6 +237,16 @@
             <path>
               <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="daoetc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
               <item name="changgou_service_api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,6 +278,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="changgou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="changgou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_api" type="462c0819:PsiDirectoryNode" />
+              <item name="changgou_service_goods_api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -408,12 +443,12 @@
       <workItem from="1579515580525" duration="1690000" />
       <workItem from="1579572936758" duration="5886000" />
       <workItem from="1579578942189" duration="712000" />
-      <workItem from="1579704753797" duration="256000" />
+      <workItem from="1579704753797" duration="1557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13375000" />
+    <option name="totallyTimeSpent" value="14676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -450,7 +485,7 @@
       <window_info anchor="right" id="Mybatis datasource" order="0" show_stripe_button="false" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23987207" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23987207" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -745,10 +780,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/service/impl/AdServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/controller/AdController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+        <state relative-caret-position="156">
+          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -759,12 +794,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/controller/AdController.java">
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_business/src/main/java/com/changgou/business/service/impl/AdServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="106" column="32" lean-forward="true" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+        <state relative-caret-position="-28">
+          <caret line="110" column="22" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/SpuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/SpecService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/com/changgou/goods/daoetc/CategoryNodeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/daoetc/CategoryNodeMapper.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/controller/SpecController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/service/impl/SpecServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1495">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/java/com/changgou/goods/daoetc/SpecDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changgou_service/changgou_service_goods/src/main/resources/com/changgou/goods/daoetc/SpecDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
