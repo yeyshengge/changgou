@@ -1,5 +1,6 @@
 package com.changgou.goods.service;
 
+import com.changgou.goods.ext.CategoryNode;
 import com.changgou.goods.pojo.Category;
 import com.github.pagehelper.Page;
 
@@ -63,7 +64,7 @@ public interface CategoryService {
      */
     Page<Category> findPage(Map<String, Object> searchMap, int page, int size);
 
-
+    List<CategoryNode> findCategoryNodeList();
 
 
 }

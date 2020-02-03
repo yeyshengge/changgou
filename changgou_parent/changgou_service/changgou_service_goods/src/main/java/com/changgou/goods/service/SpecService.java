@@ -71,6 +71,6 @@ public interface SpecService {
      */
     public List<Map> findSpecListByCategoryName(String categoryName);
 
-
+    List<Map<String,Object>> findSpecByCategoryId(Integer categoryId);
 
 }

@@ -109,4 +109,6 @@ public interface SpuService {
      * @param id
      */
     void realDel(String id);
+
+    Map<String,Long> findStatusNum();
 }

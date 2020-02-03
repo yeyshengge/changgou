@@ -63,7 +63,7 @@ public interface SkuService {
      */
     Page<Sku> findPage(Map<String, Object> searchMap, int page, int size);
 
-
+    void updateSkuList(List<Map> skuList);
 
 
 }

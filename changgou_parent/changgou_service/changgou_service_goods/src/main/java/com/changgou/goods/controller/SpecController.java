@@ -103,5 +103,15 @@ public class SpecController {
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
 
+    /**
+     * 通过三级分类id查询对应的规格
+     * @param categoryId
+     * @return
+     */
+    @GetMapping("/findSpecByCategoryId/{categoryId}")
+    public List<Map<String,Object>> findSpecByCategoryId(@PathVariable("categoryId") Integer categoryId){
+        return specService.findSpecByCategoryId(categoryId);
+    }
+
 
 }

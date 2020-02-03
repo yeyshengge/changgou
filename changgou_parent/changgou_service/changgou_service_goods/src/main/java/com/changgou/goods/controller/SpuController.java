@@ -166,4 +166,10 @@ public class SpuController {
         return new Result(true, StatusCode.OK, "商品恢复成功");
     }
 
+    @GetMapping("/findStatus")
+    public Result findStatus(){
+        Map<String,Long> map = spuService.findStatusNum();
+        return new Result(true,StatusCode.OK,"查询成功",map);
+    }
+
 }

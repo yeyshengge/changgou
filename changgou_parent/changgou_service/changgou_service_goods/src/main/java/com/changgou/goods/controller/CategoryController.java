@@ -2,6 +2,7 @@ package com.changgou.goods.controller;
 import com.changgou.entity.PageResult;
 import com.changgou.entity.Result;
 import com.changgou.entity.StatusCode;
+import com.changgou.goods.ext.CategoryNode;
 import com.changgou.goods.service.CategoryService;
 import com.changgou.goods.pojo.Category;
 import com.github.pagehelper.Page;
@@ -101,6 +102,11 @@ public class CategoryController {
         Page<Category> pageList = categoryService.findPage(searchMap, page, size);
         PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getResult());
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
+    }
+
+    @GetMapping("/list")
+    public List<CategoryNode> findCategoryNodeList(){
+        return categoryService.findCategoryNodeList();
     }
 
 

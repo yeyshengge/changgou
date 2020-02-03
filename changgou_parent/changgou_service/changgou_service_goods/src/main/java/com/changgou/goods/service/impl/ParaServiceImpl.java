@@ -1,8 +1,10 @@
 package com.changgou.goods.service.impl;
 
+import com.changgou.goods.dao.CategoryMapper;
 import com.changgou.goods.dao.ParaMapper;
 import com.changgou.goods.dao.TemplateMapper;
 import com.changgou.goods.daoetc.ParaDao;
+import com.changgou.goods.pojo.Category;
 import com.changgou.goods.pojo.Template;
 import com.changgou.goods.service.ParaService;
 import com.changgou.goods.pojo.Para;
@@ -13,6 +15,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -27,6 +31,9 @@ public class ParaServiceImpl implements ParaService {
 
     @Autowired
     private TemplateMapper templateMapper;
+
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     /**
      * 查询全部列表
@@ -116,6 +123,33 @@ public class ParaServiceImpl implements ParaService {
     public Page<Map> findPage(Map<String,Object> searchMap,int templateId ,int page, int size){
         PageHelper.startPage(page,size);
         return paraDao.findPage(templateId);
+    }
+
+    @Override
+    public List<Map<String, Object>> findParaByCategoryId(Integer categoryId) {
+
+        Category category = categoryMapper.selectByPrimaryKey(categoryId);
+        if (category == null){
+            throw new RuntimeException("对应模板不存在");
+        }
+
+        List<Map<String, Object>> list = new ArrayList<>();
+
+        Integer templateId = category.getTemplateId();
+
+        Example example = new Example(Para.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("templateId",templateId);
+        List<Para> paraList = paraMapper.selectByExample(example);
+
+        for (Para para : paraList) {
+            Map<String, Object> data = new HashMap<>();
+            data.put("name",para.getName());
+            String[] options = para.getOptions().split(",");
+            data.put("options",options);
+            list.add(data);
+        }
+        return list;
     }
 
     /**

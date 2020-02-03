@@ -2,6 +2,7 @@ package com.changgou.goods.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.changgou.goods.dao.*;
+import com.changgou.goods.daoetc.SpuDao;
 import com.changgou.goods.pojo.*;
 import com.changgou.goods.service.SpuService;
 import com.changgou.utils.IdWorker;
@@ -14,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -349,6 +351,26 @@ public class SpuServiceImpl implements SpuService {
         //执行删除操作
         spuMapper.deleteByPrimaryKey(id);
 
+    }
+
+    @Autowired
+    private SpuDao spuDao;
+
+    @Override
+    public Map<String, Long> findStatusNum() {
+        long allNum = spuDao.findAllNum();   //所有商品数量
+        long marketableNum = spuDao.findMarketable();  //上架数量
+        long unMarketableNum = allNum - marketableNum; //未上架数量
+        long waitStatus = spuDao.findWaitStatus();
+        long unStatus = spuDao.findUnStatus();
+
+        Map<String,Long> map = new HashMap<>();
+        map.put("goodsAll",allNum);
+        map.put("marketable",marketableNum);
+        map.put("unMarketable",unMarketableNum);
+        map.put("waitStatus",waitStatus);
+        map.put("noPass",unStatus);
+        return map;
     }
 
     /**

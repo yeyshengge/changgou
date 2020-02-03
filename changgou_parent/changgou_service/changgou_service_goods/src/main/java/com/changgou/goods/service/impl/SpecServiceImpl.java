@@ -1,8 +1,10 @@
 package com.changgou.goods.service.impl;
 
+import com.changgou.goods.dao.CategoryMapper;
 import com.changgou.goods.dao.SpecMapper;
 import com.changgou.goods.dao.TemplateMapper;
 import com.changgou.goods.daoetc.SpecDao;
+import com.changgou.goods.pojo.Category;
 import com.changgou.goods.pojo.Template;
 import com.changgou.goods.service.SpecService;
 import com.changgou.goods.pojo.Spec;
@@ -12,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,6 +30,9 @@ public class SpecServiceImpl implements SpecService {
 
     @Autowired
     private TemplateMapper templateMapper;
+
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     /**
      * 查询全部列表
@@ -133,6 +140,33 @@ public class SpecServiceImpl implements SpecService {
             map.put("options", options);
         }
         return specListByCategoryName;
+    }
+
+    @Override
+    public List<Map<String, Object>> findSpecByCategoryId(Integer categoryId) {
+
+        Category category = categoryMapper.selectByPrimaryKey(categoryId);
+        if (category == null){
+            throw new RuntimeException("对应模板不存在");
+        }
+
+        List<Map<String, Object>> list = new ArrayList<>();
+
+        Integer templateId = category.getTemplateId();
+
+        Example example = new Example(Category.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("templateId",templateId);
+        List<Spec> specList = specMapper.selectByExample(example);
+
+        for (Spec spec : specList) {
+            Map<String, Object> data = new HashMap<>();
+            data.put("name",spec.getName());
+            String[] options = spec.getOptions().split(",");
+            data.put("options",options);
+            list.add(data);
+        }
+        return list;
     }
 
     /**

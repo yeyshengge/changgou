@@ -103,5 +103,15 @@ public class ParaController {
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
 
+    /**
+     * 通过三级分类id查询对应的参数列表
+     * @param categoryId
+     * @return
+     */
+    @GetMapping("/findParaByCategoryId/{categoryId}")
+    public List<Map<String,Object>> findParaByCategoryId(@PathVariable("categoryId") Integer categoryId){
+        return paraService.findParaByCategoryId(categoryId);
+    }
+
 
 }

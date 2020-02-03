@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -44,6 +45,8 @@ public class FreightTemplateServiceImpl implements FreightTemplateService {
      */
     @Override
     public void add(FreightTemplate freightTemplate){
+        freightTemplate.setAddTime(new Date());
+        freightTemplate.setIsEnable(1);
         freightTemplateMapper.insert(freightTemplate);
     }
 

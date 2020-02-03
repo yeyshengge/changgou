@@ -126,5 +126,11 @@ public class SkuController {
         return list;
     }
 
+    @PostMapping("/updateSkuList")
+    public Result updateSkuList(@RequestBody List<Map> skuList){
+        skuService.updateSkuList(skuList);
+        return new Result(true,StatusCode.OK,"修改成功");
+    }
+
 
 }

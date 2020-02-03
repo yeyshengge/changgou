@@ -1,6 +1,8 @@
 package com.changgou.goods.service.impl;
 
 import com.changgou.goods.dao.CategoryMapper;
+import com.changgou.goods.daoetc.CategoryNodeMapper;
+import com.changgou.goods.ext.CategoryNode;
 import com.changgou.goods.service.CategoryService;
 import com.changgou.goods.pojo.Category;
 import com.github.pagehelper.Page;
@@ -17,6 +19,9 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
     private CategoryMapper categoryMapper;
+
+    @Autowired
+    private CategoryNodeMapper categoryNodeMapper;
 
     /**
      * 查询全部列表
@@ -102,6 +107,12 @@ public class CategoryServiceImpl implements CategoryService {
         PageHelper.startPage(page,size);
         Example example = createExample(searchMap);
         return (Page<Category>)categoryMapper.selectByExample(example);
+    }
+
+    @Override
+    public List<CategoryNode> findCategoryNodeList() {
+        List<CategoryNode> categoryNodes = categoryNodeMapper.findCategoryNodeList();
+        return categoryNodes;
     }
 
     /**

@@ -7,6 +7,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -102,6 +103,19 @@ public class SkuServiceImpl implements SkuService {
         PageHelper.startPage(page,size);
         Example example = createExample(searchMap);
         return (Page<Sku>)skuMapper.selectByExample(example);
+    }
+
+    @Override
+    @Transactional
+    public void updateSkuList(List<Map> skuList) {
+        for (Map map : skuList) {
+            Sku sku = new Sku();
+            sku.setId((String) map.get("id"));
+            sku.setPrice((Integer) map.get("price"));
+            sku.setNum((Integer) map.get("num"));
+            sku.setAlertNum((Integer) map.get("alertNum"));
+            skuMapper.updateByPrimaryKeySelective(sku);
+        }
     }
 
     /**
