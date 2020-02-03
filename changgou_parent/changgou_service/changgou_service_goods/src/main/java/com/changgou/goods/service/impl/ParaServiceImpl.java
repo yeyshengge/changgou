@@ -1,13 +1,16 @@
 package com.changgou.goods.service.impl;
 
 import com.changgou.goods.dao.ParaMapper;
+import com.changgou.goods.dao.TemplateMapper;
 import com.changgou.goods.daoetc.ParaDao;
+import com.changgou.goods.pojo.Template;
 import com.changgou.goods.service.ParaService;
 import com.changgou.goods.pojo.Para;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -21,6 +24,9 @@ public class ParaServiceImpl implements ParaService {
 
     @Autowired
     private ParaMapper paraMapper;
+
+    @Autowired
+    private TemplateMapper templateMapper;
 
     /**
      * 查询全部列表
@@ -47,8 +53,13 @@ public class ParaServiceImpl implements ParaService {
      * @param para
      */
     @Override
+    @Transactional
     public void add(Para para){
         paraMapper.insert(para);
+        Integer templateId = para.getTemplateId();
+        Template template = templateMapper.selectByPrimaryKey(templateId);
+        template.setParaNum(template.getParaNum()+1);
+        templateMapper.updateByPrimaryKey(template);
     }
 
 

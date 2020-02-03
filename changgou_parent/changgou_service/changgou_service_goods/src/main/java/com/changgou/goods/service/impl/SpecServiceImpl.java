@@ -1,7 +1,9 @@
 package com.changgou.goods.service.impl;
 
 import com.changgou.goods.dao.SpecMapper;
+import com.changgou.goods.dao.TemplateMapper;
 import com.changgou.goods.daoetc.SpecDao;
+import com.changgou.goods.pojo.Template;
 import com.changgou.goods.service.SpecService;
 import com.changgou.goods.pojo.Spec;
 import com.github.pagehelper.Page;
@@ -21,6 +23,9 @@ public class SpecServiceImpl implements SpecService {
 
     @Autowired
     private SpecDao specDao;
+
+    @Autowired
+    private TemplateMapper templateMapper;
 
     /**
      * 查询全部列表
@@ -52,6 +57,10 @@ public class SpecServiceImpl implements SpecService {
     @Override
     public void add(Spec spec) {
         specMapper.insert(spec);
+        Integer templateId = spec.getTemplateId();
+        Template template = templateMapper.selectByPrimaryKey(templateId);
+        template.setSpecNum(template.getSpecNum()+1);
+        templateMapper.updateByPrimaryKey(template);
     }
 
 

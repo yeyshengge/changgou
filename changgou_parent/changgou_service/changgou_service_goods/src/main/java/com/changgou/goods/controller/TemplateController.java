@@ -99,7 +99,7 @@ public class TemplateController {
     @GetMapping(value = "/search/{page}/{size}" )
     public Result findPage(@RequestParam Map searchMap, @PathVariable  int page, @PathVariable  int size){
         Page<Template> pageList = templateService.findPage(searchMap, page, size);
-        PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getResult());
+        PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getPages(),pageList.getResult());
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
 
